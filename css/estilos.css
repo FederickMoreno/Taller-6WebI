@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #1a202c;
+}
+
+p {
+    margin-top: 0px;
+}
+
+
+.encabezado {
+    background-color: #171e2b;
+    padding: 30px 0 28px 0;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.marca {
+    margin: 0 0 6px 0;
+    color: #f5a623;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    margin: 8px 0 0 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+.contenido {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.contenidoDetalle {
+    width: 1150px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.encabezado .contenido,
+.encabezado .contenidoDetalle {
+    width: 1200px;
+}
+
+
+.barraTitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 0 24px 0;
+}
+
+.barraTitulo h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #1a202c;
+}
+
+.barraTitulo input {
+    width: 270px;
+    padding: 10px 12px;
+    border: 1px solid #d8dde5;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e3e6ec;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaImagen {
+    background-color: #f1f2f4;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaImagen img {
+    height: 150px;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.tarjetaInfo {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.categoria {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    color: #6b7788;
+    text-transform: uppercase;
+}
+
+.nombreProducto {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a202c;
+    min-height: 40px;
+}
+
+.filaPrecio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.calificacion {
+    font-size: 14px;
+    color: #a0640a;
+}
+
+.stock {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #6b7788;
+}
+
+.botonVer {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #171e2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonVer:hover {
+    background-color: #2b3750;
+}
+
+
+.volver {
+    display: inline-block;
+    margin: 30px 0 22px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+.detalle {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e3e6ec;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.detalleImagen {
+    width: 45%;
+    background-color: #f1f2f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalleImagen img {
+    max-width: 85%;
+    max-height: 420px;
+    object-fit: contain;
+}
+
+.detalleInfo {
+    width: 55%;
+    padding: 46px 44px;
+}
+
+.detalleNombre {
+    margin: 0 0 22px 0;
+    font-size: 34px;
+    color: #1a202c;
+}
+
+.detallePrecio {
+    margin: 0 0 22px 0;
+    font-size: 34px;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.detalleDescripcion {
+    margin: 0 0 26px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.dato {
+    background-color: #f5f6f8;
+    border-radius: 6px;
+    padding: 14px 15px;
+}
+
+.datoTitulo {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    color: #6b7788;
+}
+
+.datoValor {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+

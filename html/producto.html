@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="En esta pagina se aprecia el producto al cual el cliente o usuario di click anterior mente el cual se vera reflejado por medio del api ">
+    <meta name="autor" content="Federick Moreno Villa">
+    <title>Detalle del producto</title>
+    <script src="../js/api.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="contenidoDetalle">
+            <p class="marca">SHOP API</p>
+            <h1>Detalle del producto</h1>
+        </div>
+    </div>
+
+    <div class="contenidoDetalle">
+
+        <a class="volver" href="../index.html">← Volver al catalogo</a>
+
+        <div class="detalle">
+
+            <div class="detalleImagen" id="divImagen"></div>
+
+            <div class="detalleInfo">
+                <p class="categoria" id="categoria"></p>
+                <h2 class="detalleNombre" id="nombre"></h2>
+                <p class="detallePrecio" id="precio"></p>
+                <p class="detalleDescripcion" id="descripcion"></p>
+
+                <div class="datos">
+                    <div class="dato">
+                        <p class="datoTitulo">Calificacion</p>
+                        <p class="datoValor" id="calificacion"></p>
+                    </div>
+                    <div class="dato">
+                        <p class="datoTitulo">Stock</p>
+                        <p class="datoValor" id="stock"></p>
+                    </div>
+                    <div class="dato">
+                        <p class="datoTitulo">Marca</p>
+                        <p class="datoValor" id="marca"></p>
+                    </div>
+                    <div class="dato">
+                        <p class="datoTitulo">Descuento</p>
+                        <p class="datoValor" id="descuento"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        let parametros = new URLSearchParams(window.location.search)
+        let id = parametros.get('id')
+
+        extraerDatosProducto(id)
+
+    </script>
+</body>
+</html>

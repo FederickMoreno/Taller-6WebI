@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="En esta pagina  la cual es la principal podemos ver los productos y  el catalogo de la tienda">
+    <meta name="autor" content="Federick Moreno Villa">
+    <title>Catalogo de Productos</title>
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="contenido">
+            <p class="marca">SHOP API</p>
+            <h1>Catalogo de productos</h1>
+            <p class="subtitulo">Selecciona un producto para consultar su informacion.</p>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <div class="barraTitulo">
+            <h2>Productos disponibles</h2>
+            <input type="text" id="buscador" placeholder="Buscar producto...">
+        </div>
+
+        <div class="gridContainer" id="gridContainer"></div>
+    </div>
+
+    <script>
+
+        extraerProductos()
+
+        document.getElementById('buscador').addEventListener('input', function () {
+            filtrarProductos(this.value)
+        })
+
+    </script>
+</body>
+</html>
